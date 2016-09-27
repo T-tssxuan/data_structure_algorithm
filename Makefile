@@ -1,12 +1,12 @@
-all: ds al 
+files=$(wildcard *cpp)
+prog=$(patsubst %.cpp,%.out,$(files))
 
-ds:
-	cd data_structure && make
-al:
-	cd algorithm && make
+all: $(prog)
+
+%.out: %.cpp
+	g++ -std=c++14 $< -o $@
 
 .PHONY: clean
 
 clean:
-	rm */*.out
-
+	rm *.out

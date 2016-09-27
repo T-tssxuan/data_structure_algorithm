@@ -1,10 +1,10 @@
 files=$(wildcard *cpp)
-prog=$(patsubst %.cpp,%,$(files))
+prog=$(patsubst %.cpp,%.out,$(files))
 
 all: $(prog)
 
-%: %.cpp
-	g++ -std=c++14 $< -o $@.out
+%.out: %.cpp
+	g++ -std=c++14 $< -o $@
 
 .PHONY: clean
 
