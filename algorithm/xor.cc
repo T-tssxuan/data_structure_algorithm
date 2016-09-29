@@ -3,6 +3,13 @@
 
 using namespace std;
 
+/**Note
+ * Given N positive numbers, and a number m, calculate the number of pairs
+ * whose result with 'xor' operator greater than m.
+ *
+ * Source: 今日头条
+ */
+
 /**
  * The trie tree Node
  */
@@ -126,6 +133,10 @@ public:
     }
 };
 
+/**
+ * Input: n, m, and with n number
+ * Output: the number of pairs which result of 'xor' operator greater than m
+ */
 int main() {
     Solution so;
     int n, m, tmp;
