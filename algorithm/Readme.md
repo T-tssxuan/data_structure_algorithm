@@ -1,5 +1,5 @@
 ## Problems List and Describe [click the title to get the source]
-#### 1. [xor](./code/xor.cc)
+#### 1. [xor](./code/xor.cpp)
 ```
 Describe: Given N positive numbers, and a number m, calculate the number of pairs
 whose result with 'xor' operator greater than m.
