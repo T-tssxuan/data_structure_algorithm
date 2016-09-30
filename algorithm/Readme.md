@@ -1,12 +1,12 @@
 ## Problems List and Describe [click the title to get the source]
-#### 1. [xor](./xor.cc)
+#### 1. [xor](./code/xor.cc)
 ```
 Describe: Given N positive numbers, and a number m, calculate the number of pairs
 whose result with 'xor' operator greater than m.
 
 Source: 今日头条
 ```
-#### 2. [maximum reverse sum of sequence](./maximum_reverse_sum_of_sequence.cpp)
+#### 2. [maximum reverse sum of sequence](./code/maximum_reverse_sum_of_sequence.cpp)
 ```
 Describe: Given a series of numbers, we can reverse the suffix, prefix or both. 
 Get the maximum subarray sum of the numbers.
