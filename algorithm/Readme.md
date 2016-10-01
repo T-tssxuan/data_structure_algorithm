@@ -28,3 +28,10 @@ subsequence of "ABCDE" while "AEC" is not).
 
 Source: lintcode: http://www.lintcode.com/en/problem/distinct-subsequences/
 ```
+#### 4. [minimal shift](./code/minimal_shift.cpp)
+```
+Describe: Give a string 'str', shift the last k element to the first can make 
+the shifted string equals the origin one. Calculate the minimal k.
+
+Source: 今日头条
+```
