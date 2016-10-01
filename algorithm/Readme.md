@@ -16,3 +16,15 @@ such as: 2 2 3 4 -2 -3 can transform to: -2 -2 3 4 -2 3
 
 Source: 一点资讯
 ```
+#### 3. [distinct subsequences](./code/distinct_subsequences.cpp)
+```
+Describe: Given a string S and a string T, count the number of distinct 
+subsequences of T in S.
+
+Note: A subsequence of a string is a new string which is formed from the 
+original string by deleting some (can be none) of the characters without 
+disturbing the relative positions of the remaining characters. (ie, "ACE" is a 
+subsequence of "ABCDE" while "AEC" is not).
+
+Source: lintcode: http://www.lintcode.com/en/problem/distinct-subsequences/
+```
