@@ -44,3 +44,12 @@ Insert, Delete, Replace.
 Source: wikipedia: https://en.wikipedia.org/wiki/Edit_distance 
         lintcode: http://www.lintcode.com/en/problem/edit-distance/
 ```
+#### 6. [word ladder](./code/word_ladder.cpp)
+```
+Given two words (start and end), and a dictionary, find the length of
+shortest transformation sequence from start to end, such that:
+1. Only one letter can be changed at a time
+2. Each intermediate word must exist in the dictionary
+
+Source: lintcode: http://www.lintcode.com/en/problem/word-ladder/
+```
