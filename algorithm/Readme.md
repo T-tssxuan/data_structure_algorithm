@@ -35,3 +35,12 @@ the shifted string equals the origin one. Calculate the minimal k.
 
 Source: 今日头条
 ```
+#### 5. [edit distance](./code/edit_distance.cpp)
+```
+Given two string str1, str2, calculate the distance between str1
+and str2. The distance increase by one when do either operation of the
+Insert, Delete, Replace.
+
+Source: wikipedia: https://en.wikipedia.org/wiki/Edit_distance 
+        lintcode: http://www.lintcode.com/en/problem/edit-distance/
+```
