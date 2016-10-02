@@ -58,6 +58,10 @@ public:
     }
 };
 
+/**
+ * Input: tow string need to calculate the result
+ * Output: the result
+ */
 int main() {
     Solution so;
     string str1;
