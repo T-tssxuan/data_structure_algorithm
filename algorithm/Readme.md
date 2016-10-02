@@ -84,4 +84,5 @@ Source: lintcode: http://www.lintcode.com/en/problem/word-ladder/
 Solution: 
     Regard it as a graph, so each step is the transfer between the two 
     neighbors. Each word can have 25 * str.length() beighbors at most.
+    O(depth * 25 * word.length())
 ```
