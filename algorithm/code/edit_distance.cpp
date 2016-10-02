@@ -46,6 +46,10 @@ public:
     }
 };
 
+/**
+ * Input: two string to calculate the distance
+ * Output: the miniaml distance
+ */
 int main() {
     Solution so;
     string str1;
