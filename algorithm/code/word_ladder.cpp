@@ -59,6 +59,11 @@ public:
     }
 };
 
+/**
+ * Input: first line: the start and end string
+ *        second line: a number n followed n string
+ * Output: the minimal depth
+ */
 
 int main() {
     Solution so;
@@ -76,7 +81,7 @@ int main() {
             test.insert(tmp);
         }
         int result = so.ladderLength(str1, str2, test);
-        cout << "result: " << result << endl;
+        cout << result << endl;
     }
     return 0;
 }
