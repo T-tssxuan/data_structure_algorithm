@@ -78,11 +78,34 @@ Describe: Given two words (start and end), and a dictionary, find the length of
 shortest transformation sequence from start to end, such that:
 1. Only one letter can be changed at a time
 2. Each intermediate word must exist in the dictionary
+3. What if you need to get all path for it?
 
 Source: lintcode: http://www.lintcode.com/en/problem/word-ladder/
 
 Solution: 
-    Regard it as a graph, so each step is the transfer between the two 
-    neighbors. Each word can have 25 * str.length() beighbors at most.
-    O(depth * 25 * word.length())
+    a. Regard it as a graph, so each step is the transfer between the two 
+       neighbors. Each word can have 25 * str.length() beighbors at most.
+       O(depth * 25 * word.length())
+    b. If need get all path for it, you need to using a data structure to
+       record all previous point for current step. At last you can use it to
+       reconstruct the path where comes from.
+```
+#### 7. [Largest Rectangle in Histogram](./code/largest_rectangle_in_histogram.cpp)
+```
+Describe: Given n non-negative integers representing the histogram's bar height 
+where the width of each bar is 1, find the area of largest rectangle in the 
+histogram.
+a. what if you the bar is different width?
+
+Source: lintcode: http://www.lintcode.com/en/problem/largest-rectangle-in-histogram/
+
+Solution:
+    a. Every bar can be expanded in two deriection, both the forward and 
+       backward direction. But we should note that the expanding process can
+       be interrupted at the point which the height of less than. So we can
+       using a stack to manipulate it, what we can make sure is that the
+       element in the stack is the ascending order from the bottom to the top.
+       Each element in the stack is composed with the start position and the
+       height of it.
+    b. If the bars are given different width, the process is identical.
 ```
