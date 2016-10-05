@@ -10,10 +10,6 @@ public:
         vector<int> nums = getDigits(n);
         vector<long long int> counts;
         vector<int> digits(10, 0);
-        // for (auto ele : nums) {
-        //     cout << ele << " ";
-        // }
-        // cout << endl;
         long long int length = nums.size();
         long long int split;
         long long int left = m;
@@ -101,6 +97,7 @@ public:
         }
         return mul;
     }
+    // git the total 
     long long int getTotal(int unit_count) {
         long long int sum = 0;
         long long int cur = 10;
@@ -110,6 +107,7 @@ public:
         }
         return sum;
     }
+    // Get all digitals of num
     vector<int> getDigits(long long int num) {
         vector<int> re;
         while (num > 0) {

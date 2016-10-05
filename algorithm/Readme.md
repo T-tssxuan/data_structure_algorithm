@@ -109,3 +109,19 @@ Solution:
        height of it.
     b. If the bars are given different width, the process is identical.
 ```
+#### 8. [Find the ith number in dictionary order and all number less than n](./code/ith_dictionary_order_lt_N.cpp)
+```
+Describe: Given a N, find the ith number with the dictionary order.(such as
+0 < 1 < 2 < 3....< 9), all number no greater than N. All preceding '0' is not 
+considered.
+
+Source: None
+
+Solution:
+    a. Suppose the length of the N in decimal is Len, the most significant
+       position is 1.
+    b. For all number with the length N, each number should no greater than 
+       the conrespond position at N if the preceding number is equal N.
+    c. For all number with the length N, the conresp
+    d. For all number with a shorter length, all digitals are considered.
+```
