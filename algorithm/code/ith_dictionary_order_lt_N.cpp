@@ -74,9 +74,9 @@ public:
         }
         return 0;
     }
+    // recursive counting the nubmer which less than the first nubmer
     long long int recursive(long long int left, long long int cur, int unit_count) {
         long long int split = getTotal(unit_count - 1) + 1;
-        // cout << "left: " << left << " split: " << split << " cur: " << cur << endl;
         for (int i = 0; i <= 9; i++) {
             if (left == 1) {
                 cur = cur * 10 + i;
