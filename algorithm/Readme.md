@@ -143,3 +143,13 @@ Solution:
        if the height is the same, just merge them
        if the height is not the same, using the higher to split the lower one.
 ```
+#### 10. [Longest words online](./code/longest_words.cpp)
+```
+Describe: Given a series of words, find all words with the longest length.
+Please provide a online algorithm.
+
+Source: http://www.lintcode.com/en/problem/longest-words/
+
+Solution:
+    Just like the split method using in the fast sorting algorithm
+```
