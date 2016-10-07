@@ -125,3 +125,21 @@ Solution:
     c. For all number with the length N, the conresp
     d. For all number with a shorter length, all digitals are considered.
 ```
+#### 9. [Building Outline](./code/building_outline.cpp)
+```
+Describe: Given a series of pairs with [start_point, end_point, height], merge
+the pairs with the following rules:
+1. The pairs with overlaped range need to merge, the higher one will cover the
+lower one.
+2. After merged, the rest of the pair need to consider.
+3. The pairs with the same height need to merge if the range overlaped
+
+Source: http://www.lintcode.com/en/problem/building-outline/
+
+Solution:
+    a. Using a heap the get the pair with the smallest start_point.
+    b. Using the last valid pair in the result to produce the comming pairs,
+       if the range of their with no overlapping, just skip to the newer, or
+       if the height is the same, just merge them
+       if the height is not the same, using the higher to split the lower one.
+```
