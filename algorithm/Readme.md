@@ -134,7 +134,7 @@ lower one.
 2. After merged, the rest of the pair need to consider.
 3. The pairs with the same height need to merge if the range overlaped
 
-Source: http://www.lintcode.com/en/problem/building-outline/
+Source: lintcode http://www.lintcode.com/en/problem/building-outline/
 
 Solution:
     a. Using a heap the get the pair with the smallest start_point.
@@ -148,7 +148,7 @@ Solution:
 Describe: Given a series of words, find all words with the longest length.
 Please provide a online algorithm.
 
-Source: http://www.lintcode.com/en/problem/longest-words/
+Source: lintcode http://www.lintcode.com/en/problem/longest-words/
 
 Solution:
     Just like the split method using in the fast sorting algorithm
