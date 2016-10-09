@@ -153,3 +153,18 @@ Source: lintcode http://www.lintcode.com/en/problem/longest-words/
 Solution:
     Just like the split method using in the fast sorting algorithm
 ```
+#### 11. [Split and scatter entries](./code/split_and_scatter_entries.cpp)
+```
+Describe: Given a bunch of entries(string), each entry has two parts, the first
+part is the id, the second part is the content. Split the entris into the given
+size, the entris have the same id should be scattered at best. In other word, 
+each segment should get kinds of id as much as possible. Note: the origin order
+of the entries should be peserved.
+
+Source: None
+
+Solution:
+    a. Using a queue to record the position of elements with the same id.
+    b. Using a min heap to get each turns result. When building the heap,
+       scattering is the first consideration, and then considering the order.
+```
