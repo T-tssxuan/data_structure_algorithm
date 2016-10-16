@@ -168,3 +168,11 @@ Solution:
     b. Using a min heap to get each turns result. When building the heap,
        scattering is the first consideration, and then considering the order.
 ```
+#### 12. [Get the next second of given time string](./code/get_next_second.cpp)
+```
+Describe: Give you a time string with the format: YYYY-MM-DD HH:MM:SS get the 
+next second of the moment. Times of 400 is leap year, times of 100 is not leap
+year, time of 4 year is leap year.
+
+Source: none
+```

@@ -4,6 +4,12 @@
 #include <iomanip>
 using namespace std;
 
+/**
+ * Describe: Give you a time string with the format: YYYY-MM-DD HH:MM:SS get the
+ * next second of the moment. Times of 400 is leap year, times of 100 is not 
+ * leap year, time of 4 year is leap year.
+ */
+
 class Solution {
 public:
     void getNextSecond(string str) {
@@ -12,6 +18,7 @@ public:
         outputResult(info);
     }
 
+    // calculate the next HH:MM:SS
     void calculateNext(vector<int>& info) {
         if (info[5] == 59) {
             info[5] = 0;
@@ -31,6 +38,7 @@ public:
         }
     }
 
+    // calculate the next YYYY:MM:DD
     void calculateDMY(vector<int>& info) {
         bool is_leap_year = isLeapYear(info[0]);
         int months[13] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
@@ -63,6 +71,7 @@ public:
         }
     }
 
+    // determain whether is leap year
     bool isLeapYear(int year) {
         if (year % 400 == 0) {
             return true;
@@ -75,6 +84,7 @@ public:
         }
     }
 
+    // output the string to time
     vector<int> strToInfo(string& str) {
         vector<int> info(6, 0);
         info[0] = stringToInt(str.substr(0, 4));
@@ -86,6 +96,7 @@ public:
         return info;
     }
 
+    // convert string to time
     void outputResult(vector<int>& info) {
         cout << setw(4) << setfill('0') << info[0] << "/"
             << setw(2) << info[1] << "/" 
@@ -95,6 +106,7 @@ public:
             << setw(2) << info[5] << endl;
     }
 
+    // convert string to number
     int stringToInt(string str) {
         int re = 0;
         for (int i = 0; i < str.size(); i++) {
