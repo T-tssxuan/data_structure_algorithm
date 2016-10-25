@@ -176,3 +176,18 @@ year, time of 4 year is leap year.
 
 Source: none
 ```
+#### 13. [Get the maximum string without pattern in given list](./code/find_maximum_string_remove_illegal_patter.cpp)
+```
+Describe: Alice writes an English composition with a length of N characters. 
+However, her teacher requires that M illegal pairs of characters cannot be 
+adjacent, and if 'ab' cannot be adjacent, 'ba' cannot be adjacent either.
+In order to meet the requirements, Alice needs to delete some characters.
+Please work out the minimum number of characters that need to be deleted.
+
+Source: hihocoder http://hihocoder.com/problemset/problem/1400
+
+Solution:
+    a. Using dynamic programming based the priveous maximum value.
+```
+
+
