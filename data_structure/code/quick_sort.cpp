@@ -28,7 +28,7 @@ private:
             }
             ++i;
         }
-        swap(nums[hi], nums[i]);
+        swap(nums[hi], nums[beg]);
         return i;
     }
     int hoare_partition(vector<int>& nums, size_t lo, size_t hi) {
@@ -54,7 +54,6 @@ public:
         if (lo < hi) {
             // p should be a signed int, in case of it is 0
             int p = lomuto_partition(nums, lo, hi);
-            cout << "lomuto p: " << p << endl;
             sort_base_lomuto_partition(nums, lo, p - 1);
             sort_base_lomuto_partition(nums, p + 1, hi);
         }
@@ -63,7 +62,6 @@ public:
         if (lo < hi) {
             // p should be a signed int, in case of it is 0
             int p = lomuto_partition(nums, lo, hi);
-            cout << "hoare p: " << p << endl;
             sort_base_hoare_partition(nums, lo, p - 1);
             sort_base_hoare_partition(nums, p + 1, hi);
         }
