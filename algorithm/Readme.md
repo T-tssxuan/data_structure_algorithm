@@ -189,5 +189,18 @@ Source: hihocoder http://hihocoder.com/problemset/problem/1400
 Solution:
     a. Using dynamic programming based the priveous maximum value.
 ```
+#### 14. [Powers of two](./code/powers_of_two.cpp)
+```
+Describe: Given a positive integer N, it is possible to represent N as the sum 
+of several positive or negative powers of 2 (± 2k for some k). For example 7 can
+be represented as 22 + 21 + 20 and 23 + (-20).
+Your task is to find the representation which contains the minimum powers of 2.
 
+Source: hihocoder http://hihocoder.com/contest/hihointerview21/problem/3
+
+Solution:
+    a. We note that a sequence of binaries, if we partition it by the 2 
+       consecutive zeros or mores, and each split's twos can be represented with
+       sum of each partition min(numbers of ones, 2 + number of zeros).
+```
 
