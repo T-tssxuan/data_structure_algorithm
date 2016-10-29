@@ -203,4 +203,17 @@ Solution:
        consecutive zeros or mores, and each split's twos can be represented with
        sum of each partition min(numbers of ones, 2 + number of zeros).
 ```
+#### 15. [Set Matrix zero](./code/set_matrix_zero.cpp)
+```
+Descirbe: Given a m x n matrix, if an element is 0, set its entire row and 
+column to 0. Do it in place.
+
+Source: lintcode http://www.lintcode.com/en/problem/set-matrix-zeroes/
+
+Solution:
+    a. Record each row and column status in the first row and the first column
+       of the matrix.
+    b. Set correspond row and column to zero except the first row and the first
+       column.
+```
 
