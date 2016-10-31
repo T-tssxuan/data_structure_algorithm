@@ -216,4 +216,25 @@ Solution:
     b. Set correspond row and column to zero except the first row and the first
        column.
 ```
+#### 16. [Burst Ballons](./code/burst_ballons.cpp)
+```
+Describe: Given n balloons, indexed from 0 to n-1. Each balloon is painted with 
+a number on it represented by array nums. You are asked to burst all the 
+balloons. If the you burst balloon i you will get:
+        nums[left] * nums[i] * nums[right] coins. 
+Here left and right are adjacent indices of i. After the burst, the left and 
+right then becomes adjacent.
+Find the maximum coins you can collect by bursting the balloons wisely.
+- You may imagine nums[-1] = nums[n] = 1. They are not real therefore you can 
+  not burst them.
+- 0 ≤ n ≤ 500, 0 ≤ nums[i] ≤ 100
+
+Source: lintcode http://www.lintcode.com/en/problem/burst-balloons/
+
+Solution:
+    a. Suppose we get the last burst ballons in each range[i...j] is k, so the 
+       max value of this range is some k range[i...k - 1] + range[k + 1...j] + 
+       nums[k] * nums[i] * nums[j].
+    b. The reverse thinking.
+```
 
