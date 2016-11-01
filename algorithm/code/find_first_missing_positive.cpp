@@ -1,19 +1,12 @@
-#include <cstring>
-#include <string>
 #include <iostream>
-#include <iterator>
 #include <algorithm>
-#include <assert.h>
 #include <vector>
-#include <queue>
-#include <stack>
-#include <string>
-#include <unordered_set>
-#include <unordered_map>
-#include <map>
-#include <unordered_set>
-#include <set>
 using namespace std;
+
+/**
+ * Describe: Find the first missing positive number.
+ * Do it in O(n)
+ */
 
 class Solution {
 public:
@@ -24,6 +17,8 @@ public:
     int firstMissingPositive(vector<int> A) {
         int len = A.size();
         int idx = 0;
+
+        // Make the correspond element to it correspond position in array.
         while (idx < len) {
             if (A[idx] > 0 && A[idx] <= len && idx + 1 != A[idx]
                     && A[idx] != A[A[idx] - 1]) {
@@ -32,11 +27,15 @@ public:
                 idx++;
             }
         }
+        
+        // Find the first missing number
         for (int i = 0; i < len; i++) {
             if (i + 1 != A[i]) {
                 return i + 1;
             }
         }
+
+        // Not found, returns len + 1
         return len + 1;
     }
 };
@@ -44,23 +43,14 @@ public:
 int main() {
     Solution so;
     vector<int> test;
-    vector<vector<int>> matrix;
-    int n, m;
-    int tmp;
+    int n;
     while (cin >> n) {
-        cin >> m;
-        matrix = vector<vector<int>>(n, vector<int>(m, 0));
+        test = vector<int>(n);
         for (int i = 0; i < n; ++i) {
-            for (int j = 0; j < m; ++j) {
-                cin >> matrix[i][j];
-            }
+            cin >> test[i];
         }
-        auto re = so.printZMatrix(matrix);
-        cout << "result: ";
-        for (auto ele : re) {
-            cout << ele << ", ";
-        }
-        cout << endl;
+        int re = so.firstMissingPositive(test);
+        cout << "result: " << re << endl;
     }
     return 0;
 }
