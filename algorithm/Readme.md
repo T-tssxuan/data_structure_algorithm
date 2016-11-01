@@ -237,4 +237,73 @@ Solution:
        nums[k] * nums[i] * nums[j].
     b. The reverse thinking.
 ```
+#### 17. [Graph Valid Tree](./code/graph_valid_tree.cpp)
+```
+Describe: Given n nodes labeled from 0 to n - 1 and a list of undirected edges 
+(each edge is a pair of nodes), write a function to check whether these edges 
+make up a valid tree.
+Suppose there is no duplicated edges;
 
+Source: lintcode http://www.lintcode.com/en/problem/graph-valid-tree/
+
+Solution: 
+    a. BFS
+    b. DFS
+    c. get the root of the node, and check the root is equal.
+    d. Given different color for each node, and merge.
+```
+
+#### 18. [Binary Representation](./code/binary_representation.cpp)
+```
+Describe: Given a (decimal - e.g. 3.72) number that is passed in as a string, 
+return the binary representation that is passed in as a string. If the 
+fractional part of the number can not be represented accurately in binary with 
+at most 32 characters, return ERROR.
+
+Source: lintcode http://www.lintcode.com/en/problem/binary-representation/
+
+Solution:
+    a. Using divide two get remainder to process the integer.
+    b. Using multiple 2 get the integer to get the fractional value.
+```
+#### 19. [Largest Number](./code/largest_number.cpp)
+```
+Describe: Given a list of non negative integers, arrange them such that they 
+form the largest number.
+Note: Return string instead of number;
+
+Source: lintcode http://www.lintcode.com/en/problem/largest-number/
+
+Solution:
+    a. Using the priority queue.
+    b. The compare function is need to recursive compare the rest of the string
+       and the origin string.
+```
+#### 20. [Gas station](./code/gas_station.cpp)
+```
+Describe: The problem please reference to the lintcode.
+Extend: Giving a series of number, find position which go a circle gets no 
+negative value at all position.
+
+Source: lintcode http://www.lintcode.com/en/problem/gas-station/
+
+Solution:
+    a. Get the subtraction of each position.
+    b. If the sum is less than zero, none result.
+    c. Scan the sequence and accumulate the value, if less than zore at some 
+       position, start new accumulate at the next positon.
+    d. Do it in O(n).
+```
+#### 21. [Find First Missing Positive](./code/find_first_missing_positive.cpp)
+```
+Describe: Given a series of number, find the first missing positive number.
+
+Source: lintcode http://www.lintcode.com/en/problem/first-missing-positive/
+
+Solution:
+    a. Move a number in range [1...len] to it's corresponed position in the
+       array.
+    b. Check for the first one which missed.
+    c. If all positions get it's value, just return len + 1.
+    d. Do it in O(n)
+```
