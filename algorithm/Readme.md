@@ -319,3 +319,16 @@ Solution:
     b. If the previous position is matched, the following position can based on
        the one preceding it.
 ```
+#### 23. [Permutation Index](./code/permutation_index.cpp)
+```
+Descirbe: Given a series of element, find its index in all permutation. Suppose
+the index start at 1.
+
+Source: lintcode http://www.lintcode.com/en/problem/permutation-index/ 
+
+Solution:
+    a. All element less than current in the following sequence can make the 
+       full permutation, so the result is: 
+            [A[i] + count_less(A[i]) * (len - i)! (i -> (0...len - 1))] + 1
+    b. The time complexity is O(n ^ 2)
+```
