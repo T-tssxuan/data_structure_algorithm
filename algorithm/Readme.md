@@ -307,3 +307,15 @@ Solution:
     c. If all positions get it's value, just return len + 1.
     d. Do it in O(n)
 ```
+#### 22. [Wildcard Matching](./code/wildcard_matching.cpp)
+```
+Descirbe: Implement wildcard pattern matching with support for '?' and '\*'.
+Do it in O(len(source) * len(pattern).
+
+Source: lintcode http://www.lintcode.com/en/problem/wildcard-matching/
+
+Solution:
+    a. Dynamic programming.
+    b. If the previous position is matched, the following position can based on
+       the one preceding it.
+```
