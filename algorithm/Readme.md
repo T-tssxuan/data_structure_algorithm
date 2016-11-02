@@ -324,6 +324,8 @@ Solution:
 Descirbe: Given a series of element, find its index in all permutation. Suppose
 the index start at 1.
 
+Variation: Element in it can be duplicated.
+
 Source: lintcode http://www.lintcode.com/en/problem/permutation-index/ 
 
 Solution:
@@ -331,4 +333,6 @@ Solution:
        full permutation, so the result is: 
             [A[i] + count_less(A[i]) * (len - i)! (i -> (0...len - 1))] + 1
     b. The time complexity is O(n ^ 2)
+    c. For the duplicated variation, need to consider the identity permutation.
+       For each permutation, we need to divide the identity case.
 ```
