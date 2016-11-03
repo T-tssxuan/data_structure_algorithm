@@ -69,6 +69,24 @@ public:
         }
         return root;
     }
+
+    void modify(Node* root, int index, int value) {
+        if (index < root->start || index > root->end) {
+            return;
+        }
+        if (index == root->start && index == root->end) {
+            root->min = value;
+            return;
+        }
+        int mid = (root->start + root->end) / 2;
+        if (index <= mid) {
+            modify(root->left, index, value);
+        } else {
+            modify(root->right, index, value);
+        }
+        root->min = root->left->min < root->right->min? \
+                    root->left->min : root->right->min;
+    }
 };
 
 
@@ -78,5 +96,10 @@ int main() {
     SegmentTree::Node *root = st.buildSegmentTree(test, 0, test.size() - 1);
     int re = st.getMin(root, 0, 3);
     cout << "result: " << re << endl;
+
+    st.modify(root, 2, -1);
+    re = st.getMin(root, 0, 3);
+    cout << "result: " << re << endl;
+
     return 0;
 }
