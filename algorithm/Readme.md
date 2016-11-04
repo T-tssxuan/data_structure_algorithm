@@ -374,3 +374,13 @@ Solution:
        find the next af with af > Af, otherwise find ab > Ab.
     b. Time O(n), Space O(1)
 ```
+#### 27. [Count 1 in Binary](./code/count_1_binary.cpp)
+```
+Describe: Count how many 1 in binary representation of a 32-bit integer. If 
+there is m bit setted in the number, please making the time is O(m).
+
+Source: lintcode http://www.lintcode.com/en/problem/count-1-in-binary/#
+
+Solution:
+    a. num & (num - 1) elimilate the last 1 in the number.
+```
