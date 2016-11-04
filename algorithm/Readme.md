@@ -338,7 +338,7 @@ Solution:
 ```
 #### 24. [Count of Smaller Number before itself](./code/count_of_smaller_numbers_before_itself.cpp)
 ```
-Describe: Given a array of number, for each element finds the number of elements 
+Describe: Given an array of number, for each element finds the number of elements 
 which less than it and exist before the give number.
 
 Source: lintcode http://www.lintcode.com/en/problem/count-of-smaller-number-before-itself/
@@ -350,4 +350,15 @@ Solution:
     b. We need to scan from beginning to the end and construct the binary 
        search tree.
     c. The time cost is O(log(n!))
+```
+### 25. [Sliding Window Maximum](./code/sliding_window_maximum.cpp)
+```
+Describe: Given an array of number and a window with size k, the window slides
+from left to right, find maximum value at the window at each sliding.
+
+Source: lintcode http://www.lintcode.com/en/problem/sliding-window-maximum/
+
+Solution:
+    a. Using deque.
+    b. Iterating the deque left the element which greater than current value.
 ```
