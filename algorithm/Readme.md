@@ -336,3 +336,18 @@ Solution:
     c. For the duplicated variation, need to consider the identity permutation.
        For each permutation, we need to divide the identity case.
 ```
+#### 24. [Count of Smaller Number before itself](./code/count_of_smaller_numbers_before_itself.cpp)
+```
+Describe: Given a array of number, for each element finds the number of elements 
+which less than it and exist before the give number.
+
+Source: lintcode http://www.lintcode.com/en/problem/count-of-smaller-number-before-itself/
+
+Solution:
+    a. Using a binary search tree to record each elements info which includes 
+       the number of element equals to it and the number of elements which 
+       less than it.
+    b. We need to scan from beginning to the end and construct the binary 
+       search tree.
+    c. The time cost is O(log(n!))
+```
