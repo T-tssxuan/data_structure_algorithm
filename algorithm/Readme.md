@@ -351,7 +351,7 @@ Solution:
        search tree.
     c. The time cost is O(log(n!))
 ```
-### 25. [Sliding Window Maximum](./code/sliding_window_maximum.cpp)
+#### 25. [Sliding Window Maximum](./code/sliding_window_maximum.cpp)
 ```
 Describe: Given an array of number and a window with size k, the window slides
 from left to right, find maximum value at the window at each sliding.
@@ -361,4 +361,16 @@ Source: lintcode http://www.lintcode.com/en/problem/sliding-window-maximum/
 Solution:
     a. Using deque.
     b. Iterating the deque left the element which greater than current value.
+```
+#### 26. [Trapping Rain Water](./code/trapping_rain_water.cpp)
+```
+Describe: Given n non-negative integers representing an elevation map where the 
+width of each bar is 1, compute how much water it is able to trap after raining.
+
+Source: lintcode http://www.lintcode.com/en/problem/trapping-rain-water/
+
+Solution:
+    a. Using to anchor the back highest Ab, and the front highest Af, if Af < Ab
+       find the next af with af > Af, otherwise find ab > Ab.
+    b. Time O(n), Space O(1)
 ```
