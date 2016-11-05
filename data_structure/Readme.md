@@ -4,3 +4,4 @@
 2. [Kmp algorithm](./code/kmp.cpp)
 3. [Quick sort](./code/quick_sort.cpp)
 4. [Segment tree](./code/segment_tree.cpp)
+5. [Expression Tree](./code/expression_tree)
