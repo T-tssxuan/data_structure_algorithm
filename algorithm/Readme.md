@@ -384,3 +384,28 @@ Source: lintcode http://www.lintcode.com/en/problem/count-1-in-binary/#
 Solution:
     a. num & (num - 1) elimilate the last 1 in the number.
 ```
+#### 28. [Convert Expression to Reverse Polish Notation](./code/reverse_polish_notation.cpp)
+```
+Describe: Given an expression string array, return the Reverse Polish notation 
+of this expression. (remove the parentheses)
+
+Source: lintcode http://www.lintcode.com/en/problem/convert-expression-to-reverse-polish-notation/
+
+Solution:
+    a. expression_a op expression_b 
+       ==> [convert(expression_a), convert(expression_b), op]
+    b. note the order of the expression.
+```
+#### 29. [minimal number](./code/minimal_number.cpp)
+```
+Describe: Given a series of number, reorder it gets the minimal number the 
+formed, not return a string.
+
+Source: lint code http://www.lintcode.com/en/problem/reorder-array-to-construct-the-minimum-number/
+Reference: problem 19 largest number.
+
+Solution:
+    a. Using a priority queue to manage.
+    b. Return the minimal number first.
+    c. Time O(nlog(n))
+```
