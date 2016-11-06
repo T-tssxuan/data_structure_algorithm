@@ -401,11 +401,25 @@ Solution:
 Describe: Given a series of number, reorder it gets the minimal number the 
 formed, not return a string.
 
-Source: lint code http://www.lintcode.com/en/problem/reorder-array-to-construct-the-minimum-number/
+Source: lintcode http://www.lintcode.com/en/problem/reorder-array-to-construct-the-minimum-number/
 Reference: problem 19 largest number.
 
 Solution:
     a. Using a priority queue to manage.
     b. Return the minimal number first.
     c. Time O(nlog(n))
+```
+#### 30. [Best Time to Buy and Sell Stock IV](./code/best_time_to_buy_and_sell_stock.cpp)
+```
+Describe: Say you have an array for which the ith element is the price of a 
+given stock on day i.
+Design an algorithm to find the maximum profit. You may complete at most k 
+transactions.
+
+Source: lintcode http://www.lintcode.com/en/problem/best-time-to-buy-and-sell-stock-iv/
+
+Solution:
+    a. Get a local max, with the meaning that current day the jth sell happened.
+    b. The local max can merge to the previous transaction.
+```
 ```
