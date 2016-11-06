@@ -424,3 +424,14 @@ Solution:
     c. Another, merger the consective transaction with least lost till left k 
        transaction with O(k * lg(n)).
 ```
+#### 31. [Flipping coins]
+```
+Describe: Given a series of coins, and two players. Each time their can flip x 
+or y coins, decide the first player will win or lose.
+
+Source: none
+
+Solution:
+    a. If the first can makes the coins reach m * (x + y) first, he will win the
+       game.
+```
