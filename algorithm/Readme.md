@@ -421,5 +421,6 @@ Source: lintcode http://www.lintcode.com/en/problem/best-time-to-buy-and-sell-st
 Solution:
     a. Get a local max, with the meaning that current day the jth sell happened.
     b. The local max can merge to the previous transaction.
-```
+    c. Another, merger the consective transaction with least lost till left k 
+       transaction with O(k * lg(n)).
 ```
