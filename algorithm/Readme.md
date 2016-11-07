@@ -435,3 +435,18 @@ Solution:
     a. If the first can makes the coins reach m * (x + y) first, he will win the
        game.
 ```
+### 32. [Coins in a line ii](./code/coins_in_a_line_ii.cpp)
+```
+Describe: There are n coins with different value in a line. Two players take 
+turns to take one or two coins from left side until there are no more coins left. 
+The player who take the coins with the most value wins.
+
+Could you please decide the first player will win or lose?
+
+Source: lintcode http://www.lintcode.com/en/problem/coins-in-a-line-ii/
+
+Solution:
+    a. Game theory.
+    b. Current best is the better of two method, and each method gets from the
+       worst result selected by the other one.
+```
