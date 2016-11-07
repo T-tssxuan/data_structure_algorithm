@@ -435,7 +435,7 @@ Solution:
     a. If the first can makes the coins reach m * (x + y) first, he will win the
        game.
 ```
-### 32. [Coins in a line ii](./code/coins_in_a_line_ii.cpp)
+#### 32. [Coins in a line ii](./code/coins_in_a_line_ii.cpp)
 ```
 Describe: There are n coins with different value in a line. Two players take 
 turns to take one or two coins from left side until there are no more coins left. 
@@ -449,4 +449,17 @@ Solution:
     a. Game theory.
     b. Current best is the better of two method, and each method gets from the
        worst result selected by the other one.
+```
+#### 33. [Gray Code](./code/gray_code.cpp)
+```
+Describe: The gray code is a binary numeral system where two successive values 
+differ in only one bit.
+Given a non-negative integer n representing the total number of bits in the 
+code, find the sequence of gray code. A gray code sequence must begin with 0 and 
+with cover all 2n integers.
+
+Source: lintcode http://www.lintcode.com/en/problem/gray-code/#
+
+Solution:
+    a. Reverse back.
 ```
