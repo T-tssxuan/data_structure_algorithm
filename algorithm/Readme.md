@@ -463,3 +463,12 @@ Source: lintcode http://www.lintcode.com/en/problem/gray-code/#
 Solution:
     a. Reverse back.
 ```
+#### 34. [Valid number](./code/valid_number.cpp)
+```
+Describe: Validate if a given string is numeric.
+
+Source: lintcode http://www.lintcode.com/en/problem/valid-number/
+
+Solution:
+    a. Each condition, preceding zeros and padding zeros.
+```
