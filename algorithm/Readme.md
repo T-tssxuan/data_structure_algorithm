@@ -472,3 +472,13 @@ Source: lintcode http://www.lintcode.com/en/problem/valid-number/
 Solution:
     a. Each condition, preceding zeros and padding zeros.
 ```
+#### 35. [Generate Parentheses](./code/generate_parentheses.cpp)
+```
+Describe: Given n pairs of parentheses, write a function to generate all 
+combinations of well-formed parentheses.
+
+Source: lintcode http://www.lintcode.com/en/problem/generate-parentheses/
+
+Solution:
+    a. Using common recursive algorithm
+```
