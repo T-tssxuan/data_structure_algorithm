@@ -482,3 +482,25 @@ Source: lintcode http://www.lintcode.com/en/problem/generate-parentheses/
 Solution:
     a. Using common recursive algorithm
 ```
+#### 36. [Copy Books](./code/copy_books.cpp)
+------------------
+```
+Describe: Given an array A of integer with size of n( means n books and number 
+of pages of each book) and k people to copy the book. You must distribute the 
+continuous id books to one people to copy. (You can give book A[1],A[2] to one 
+people, but you cannot give book A[1], A[3] to one people, because book A[1] and 
+A[3] is not continuous.) Each person have can copy one page per minute. Return 
+the number of smallest minutes need to copy all the books.
+
+Source: lintcode http://www.lintcode.com/en/problem/copy-books/
+
+Solution:
+    a. The dp[x][y] array represented the minimal value for x people process the 
+       preceding y books. And then we can conclude that the x + 1 people process
+       preceding j books, can be max(dp[x][i - 1], sum(i...j)) for some i.
+    b. We notice that the dp[x][y] is a nondecrease for some x, so when deal
+       with the max(dp[x][i - 1], sum(i...j)), we can increase i when we make 
+       sure there is dp[x][i] > sum(i...j). So we can make a O(n * k) algorithm
+       form this problem.
+    c. Time O(n * k)
+```
