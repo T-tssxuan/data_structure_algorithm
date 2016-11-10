@@ -33,15 +33,13 @@ private:
     }
     int hoare_partition(vector<int>& nums, size_t lo, size_t hi) {
         int pivot = nums[lo];
-        int beg = lo;
-        int end = hi;
+        int beg = lo - 1;
+        int end = hi + 1;
         while (true) {
-            while(nums[beg] < pivot) {
-                ++beg;
-            }
-            while(nums[end] > pivot) {
-                --end;
-            }
+            do ++beg; while (nums[beg] < pivot);
+
+            do --end; while (nums[end] > pivot);
+
             if (beg >= end) {
                 return end;
             }
