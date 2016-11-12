@@ -61,17 +61,5 @@ public:
 };
 
 int main() {
-    Solution so;
-    vector<int> test;
-    int n, tmp;
-    while (cin >> n) {
-        test.clear();
-        while (n-- > 0) {
-            cin >> tmp;
-            test.push_back(tmp);
-        }
-        int re = so.maxCoins(test);
-        cout << re << endl;
-    }
     return 0;
 }

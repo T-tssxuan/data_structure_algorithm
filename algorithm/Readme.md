@@ -526,3 +526,13 @@ Solution:
     b. The maximum rectange for a sequence.
     c. O(m * n)
 ```
+#### 39. [Perfect Squares](./code/perfect_squares.cpp)
+```
+Describe: Given a positive integer n, find the least number of perfect square 
+numbers (for example, 1, 4, 9, 16, ...) which sum to n.
+
+Source: lintcode http://www.lintcode.com/en/problem/perfect-squares/#
+
+Solution: 
+    a. https://en.wikipedia.org/wiki/Lagrange%27s_four-square_theorem
+```
