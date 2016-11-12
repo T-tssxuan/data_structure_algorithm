@@ -514,3 +514,15 @@ Source: lintcode http://www.lintcode.com/en/problem/wiggle-sort-ii/
 Solution:
     a. https://discuss.leetcode.com/topic/32929/o-n-o-1-after-median-virtual-indexing
 ```
+#### 38. [Maximal Rectangle](./code/maximal_rectangle.cpp)
+```
+Desribe: Given a 2D boolean matrix filled with False and True, find the largest 
+rectangle containing all True and return its area.
+
+Source: lintcode http://www.lintcode.com/en/problem/maximal-rectangle/
+
+Solution:
+    a. Dynamic program.
+    b. The maximum rectange for a sequence.
+    c. O(m * n)
+```
