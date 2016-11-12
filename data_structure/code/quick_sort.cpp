@@ -29,7 +29,7 @@ private:
             ++i;
         }
         swap(nums[hi], nums[beg]);
-        return i;
+        return beg;
     }
     int hoare_partition(vector<int>& nums, size_t lo, size_t hi) {
         int pivot = nums[lo];
