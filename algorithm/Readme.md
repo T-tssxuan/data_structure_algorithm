@@ -504,3 +504,13 @@ Solution:
        form this problem.
     c. Time O(n * k)
 ```
+#### 37. [Wiggle sort](./code/wiggle_sort.cpp)
+```
+Describe: Given an unsorted array nums, reorder it such that
+nums[0] < nums[1] > nums[2] < nums[3]....
+
+Source: lintcode http://www.lintcode.com/en/problem/wiggle-sort-ii/
+
+Solution:
+    a. https://discuss.leetcode.com/topic/32929/o-n-o-1-after-median-virtual-indexing
+```
