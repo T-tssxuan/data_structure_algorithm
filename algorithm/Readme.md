@@ -551,3 +551,17 @@ Solution:
        index correspond to primes[i] is increase.
     b. O(n * length)
 ```
+#### 41. [Create Maximum Number](./code/create_maximum_number.cpp)
+```
+Describe: Given two arrays of length m and n with digits 0-9 representing two 
+numbers. Create the maximum number of length k <= m + n from digits of the two. 
+The relative order of the digits from the same array must be preserved. Return 
+an array of the k digits. You should try to optimize your time and space 
+complexity.
+
+Source: lintcode http://www.lintcode.com/en/problem/create-maximum-number/
+
+Solution:
+    a. Get the maximum subarray from a longer array.
+    b. Merge two array.
+```
