@@ -4,7 +4,7 @@
 Describe: Given N positive numbers, and a number m, calculate the number of pairs
 whose result with 'xor' operator greater than m.
 
-Source: 今日头条
+Source: toutiao
 
 Solution:
     Using the trie tree and record each subtree elements number.
@@ -18,7 +18,7 @@ Get the maximum subarray sum of the numbers.
 Note: reverse must beginning at the first one or the last one.
 such as: 2 2 3 4 -2 -3 can transform to: -2 -2 3 4 -2 3
 
-Source: 一点资讯
+Source: yidian
 
 Solution:
     1. The maximum sequence comes from 2 kind, a: all reverse, b: reverse and 
