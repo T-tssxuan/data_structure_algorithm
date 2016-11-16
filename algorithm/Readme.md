@@ -565,3 +565,13 @@ Solution:
     a. Get the maximum subarray from a longer array.
     b. Merge two array.
 ```
+#### 42. [Longest Palindromic Substring](./code/longest_palindromic_substring.cpp)
+```
+Describe: Find the longest palindromic substring from a give string.
+
+Source: wikepedia https://en.wikipedia.org/wiki/Longest_palindromic_substring#Manacher.27s_algorithm
+
+Solution:
+    a. Using the Manacher's algorithm.
+    b. O(n)
+```
