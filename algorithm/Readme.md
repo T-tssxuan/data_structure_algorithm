@@ -575,3 +575,15 @@ Solution:
     a. Using the Manacher's algorithm.
     b. O(n)
 ```
+#### 43. [Trie Graph](./code/trie_graph.cpp) 
+```
+Describe: Given an array of illegal words, and a string, decide weather the
+string contains any of illegal words.
+Words is composed of a-z.
+
+Source: hihocoder http://hihocoder.com/problemset/problem/1036
+
+Solution:
+    a. Using trie graph.
+    b. O(n * wordslen + strlen)
+```
