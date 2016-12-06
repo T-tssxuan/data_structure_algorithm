@@ -587,3 +587,15 @@ Solution:
     a. Using trie graph.
     b. O(n * wordslen + strlen)
 ```
+#### 44. [Median of Two Sorted Arrays](./code/median_of_two_sorted_arrays.py)
+```
+Describe: There are two sorted arrays nums1 and nums2 of size m and n 
+respectively.  Find the median of the two sorted arrays. The overall run time 
+complexity should be O(log (m+n)).
+
+Source: leetcode https://leetcode.com/problems/median-of-two-sorted-arrays/
+
+Solution:
+    a. Using binary search
+    b. The length which exclude of one array is include into the other one.
+```
