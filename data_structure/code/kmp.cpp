@@ -25,7 +25,7 @@ private:
      */
     vector<int> indexSearch(string &str) {
         vector<int> index(str.length(), -1);
-        if (str.length() <= 2) {
+        if (str.length() < 2) {
             return index;
         }
         index[1] = 0;
