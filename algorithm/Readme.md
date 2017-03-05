@@ -1,4 +1,4 @@
-## Problems List and Describe [click the title to get the source]
+## Problems List and Describe [click the title to get the source code]
 #### 1. [xor](./code/xor.cpp)
 ```
 Describe: Given N positive numbers, and a number m, calculate the number of pairs
