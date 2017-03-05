@@ -599,3 +599,16 @@ Solution:
     a. Using binary search
     b. The length which exclude of one array is include into the other one.
 ```
+#### 45.[Rectangle judgement](./code/rectangle_judgement.cpp)
+```
+Describe: Given the begin and end of four line in a plane, decide whether their
+form a rectangle whose area need to greater than zeor.
+
+Source: hihocoder http://hihocoder.com/problemset/problem/1040
+
+Solution:
+    a. There must be four identity point of the given point.
+    b. We can get each vector of the lines.
+    c. Among the four vectors, there must be two equal and the left equal.
+    d. The two pairs inner product get zero.
+```
