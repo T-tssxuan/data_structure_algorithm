@@ -612,3 +612,16 @@ Solution:
     c. Among the four vectors, there must be two equal and the left equal.
     d. The two pairs inner product get zero.
 ```
+#### 46.[Path sequence validate](./code/path_sequence_validate.cpp)
+```
+Describe: There are n points and n-1 path between these points, you can travel
+each path twice. There is a sequence of point, you need to travel these point 
+follow the sequence of point.
+
+Source: hihocoder http://hihocoder.com/problemset/problem/1041
+
+Solution:
+    a. Deep first travel
+    b. Subtrees travel points which in the given sequence must be adjacent
+    c. Using the subtrees' sequence form the root's sequence and valid it.
+```
