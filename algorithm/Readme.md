@@ -625,3 +625,15 @@ Solution:
     b. Subtrees travel points which in the given sequence must be adjacent
     c. Using the subtrees' sequence form the root's sequence and valid it.
 ```
+#### 47.[Maximum Gap](./code/maximum_gap.cpp)
+```
+Describe: Given an unsorted array, find the maximum difference between the successive elements in its sorted form.  Try to solve it in linear time/space. Return 0 if the array contains less than 2 elements. All num is non-negative.
+
+Source: leetcode https://leetcode.com/problems/maximum-gap/#/description
+
+Solution:
+    a. Using bucket.
+    b. Each bucket get the maximum and the minimal.
+    c. The gap to divide the bucket should no greater than the minimal gap well
+       can get.
+```
