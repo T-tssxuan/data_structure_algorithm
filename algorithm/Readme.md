@@ -637,3 +637,24 @@ Solution:
     c. The gap to divide the bucket should no greater than the minimal gap well
        can get.
 ```
+#### 48.[Wiggle Subsequence](./code/wiggle_subsequence.cpp)
+```
+Describe: Get the maximum length of the wiggle subsequence.
+
+Source: https://leetcode.com/problems/wiggle-subsequence/#/description
+
+Solution:
+    a. Using dynamic programming.
+```
+#### 49.[Range Value](./code/range_value.cpp)
+```
+Describe: Given a list, the value V(l, r) is the number of pairs in range l...r, 
+please calculate the the ith value in all V(l, r).
+
+Source: http://hihocoder.com/problemset/problem/1483
+
+Solution:
+    a. Using the double pointer
+    b. Using binary search
+    c. How to accumulate the number of count.
+```
