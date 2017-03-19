@@ -627,7 +627,9 @@ Solution:
 ```
 #### 47.[Maximum Gap](./code/maximum_gap.cpp)
 ```
-Describe: Given an unsorted array, find the maximum difference between the successive elements in its sorted form.  Try to solve it in linear time/space. Return 0 if the array contains less than 2 elements. All num is non-negative.
+Describe: Given an unsorted array, find the maximum difference between the 
+successive elements in its sorted form.  Try to solve it in linear time/space. 
+Return 0 if the array contains less than 2 elements. All num is non-negative.
 
 Source: leetcode https://leetcode.com/problems/maximum-gap/#/description
 
@@ -657,4 +659,17 @@ Solution:
     a. Using the double pointer
     b. Using binary search
     c. How to accumulate the number of count.
+```
+#### 50.[Split Tree into Three Equal Subtrees](./code/split_tree_into_three_equal_subtrees.cpp)
+```
+Describe: Given a tree, each node gets a value, you need to calculate the number
+of methods which split the tree into three subtrees, the split points should not
+be the root.
+
+Source: http://hihocoder.com/problemset/problem/1479
+
+Solution:
+    a. Using dfs.
+    b. Parent 2 * average should consider.
+    c. Parent average should include after descendants visited.
 ```
