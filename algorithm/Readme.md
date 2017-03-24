@@ -673,3 +673,19 @@ Solution:
     b. Parent 2 * average should consider.
     c. Parent average should include after descendants visited.
 ```
+#### 50.[Find the Duplicate Number](./code/find_duplicate_number.cpp)
+```
+Describe: Given an array nums containing n + 1 integers where each integer is 
+between 1 and n (inclusive), prove that at least one duplicate number must 
+exist. Assume that there is only one duplicate number, find the duplicate one.
+Note:
+    1. You must not modify the array.
+    2. Using O(1) space.
+    3. Less than O(n^2).
+    4. Only one dulplicated number
+
+Source: leetcode https://leetcode.com/problems/find-the-duplicate-number/#/description
+
+Solution:
+    a. The same as find the circle in a linked list
+```
