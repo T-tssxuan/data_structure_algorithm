@@ -689,3 +689,16 @@ Source: leetcode https://leetcode.com/problems/find-the-duplicate-number/#/descr
 Solution:
     a. The same as find the circle in a linked list
 ```
+#### 50.[Parentheses Sequence](./code/parentheses_sequence.cpp)
+```
+Description: You are given a sequence S of parentheses. You are asked to insert into S 
+as few parentheses as possible so that the resulting sequence T is well matched.
+It's not difficult. But can you tell how many different T you can get?
+Assume S = ()), you can get either (()) or ()().
+
+Source: hihocoder http://hihocoder.com/problemset/problem/1492
+
+Solution:
+    1. Dynamic programming
+    2. Rotate array
+```
