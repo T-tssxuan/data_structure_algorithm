@@ -702,3 +702,22 @@ Solution:
     1. Dynamic programming
     2. Rotate array
 ```
+#### 51.[Encode String with Shortest Length](./code/encode_string_with_shortest_length.cpp)
+```
+Descriptiong: Given a non-empty string, encode the string such that its encoded 
+length is the shortest.
+The encoding rule is: k[encoded_string], where the encoded_string inside the 
+square brackets is being repeated exactly k times.
+Note:
+k will be a positive integer and encoded string will not be empty or have extra space.
+You may assume that the input string contains only lowercase English letters. 
+The string's length is at most 160.
+If an encoding process does not make the string shorter, then do not encode it. 
+If there are several solutions, return any of them is fine.
+
+Source: leetcode https://leetcode.com/problems/encode-string-with-shortest-length/#/description
+
+Solution:
+    1. If (s + s).find(s, 1) not equals to n, there are s[:idx] * k = s
+    2. Using dynamic programming.
+```
