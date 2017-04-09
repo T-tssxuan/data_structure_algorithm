@@ -721,3 +721,13 @@ Solution:
     1. If (s + s).find(s, 1) not equals to n, there are s[:idx] * k = s
     2. Using dynamic programming.
 ```
+#### 52.[Fast matrix multiply](./code/fast_matrix_multiply.cpp)
+```
+Description: A knight start at position (r, c), find all path after N steps.
+
+Source: http://hihocoder.com/problemset/problem/1504
+
+Solution:
+    1. Building the state transfer matrix.
+    2. Using the fast matrix multiply.
+```
