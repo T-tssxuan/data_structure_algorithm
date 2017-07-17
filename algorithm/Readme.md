@@ -731,3 +731,14 @@ Solution:
     1. Building the state transfer matrix.
     2. Using the fast matrix multiply.
 ```
+#### 53.[State compress](./code/state_compress.cpp)
+```
+Description: Full fill a plate with 2 * 1 cake which can rotate ramdom
+
+Source: http://hihocoder.com/problemset/problem/1048
+
+Solution:
+    1. Note: iterate row by row, what influence the result is row_i and row_i+1,
+       we need record the coresponed state
+    2. We can using bitset to record the state
+```
