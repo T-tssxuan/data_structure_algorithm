@@ -742,3 +742,13 @@ Solution:
        we need record the coresponed state
     2. We can using bitset to record the state
 ```
+#### 54. [Missed square](./code/missed_square.cpp)
+```
+Description: Find the missed square in a big square
+
+Source: http://hihocoder.com/problemset/problem/1552
+
+Solution:
+    1. Note: the nodes in the given set
+    2. The node with odd visited count must be abnormal
+```
